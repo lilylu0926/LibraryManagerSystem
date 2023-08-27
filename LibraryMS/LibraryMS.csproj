@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE258F74-418F-49EE-A89A-420FBF56F959}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LibraryMS</RootNamespace>
+    <AssemblyName>LibraryMS</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProfile.Designer.cs">
+      <DependentUpon>FrmProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsign\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsign\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmmain.Designer.cs">
+      <DependentUpon>Frmmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsign\FrmSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsign\FrmSignUp.Designer.cs">
+      <DependentUpon>FrmSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsuppler\FrmSaleHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsuppler\FrmSaleHistory.Designer.cs">
+      <DependentUpon>FrmSaleHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsuppler\FrmSellBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsuppler\FrmSellBook.Designer.cs">
+      <DependentUpon>FrmSellBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmuser\FrmBorrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuser\FrmBorrow.Designer.cs">
+      <DependentUpon>FrmBorrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmuser\FrmBorrowBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuser\FrmBorrowBook.Designer.cs">
+      <DependentUpon>FrmBorrowBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmuser\FrmReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuser\FrmReturn.Designer.cs">
+      <DependentUpon>FrmReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmuser\FrmUserHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuser\FrmUserHistory.Designer.cs">
+      <DependentUpon>FrmUserHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staff\FrmBookInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staff\FrmBookInfo.Designer.cs">
+      <DependentUpon>FrmBookInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staff\FrmBookInfoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staff\FrmBookInfoEdit.Designer.cs">
+      <DependentUpon>FrmBookInfoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staff\FrmBookList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staff\FrmBookList.Designer.cs">
+      <DependentUpon>FrmBookList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staff\FrmLend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staff\FrmLend.Designer.cs">
+      <DependentUpon>FrmLend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staff\FrmLendUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staff\FrmLendUser.Designer.cs">
+      <DependentUpon>FrmLendUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staff\FrmMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staff\FrmMember.Designer.cs">
+      <DependentUpon>FrmMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staff\FrmReserve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staff\FrmReserve.Designer.cs">
+      <DependentUpon>FrmReserve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staff\FrmStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staff\FrmStaff.Designer.cs">
+      <DependentUpon>FrmStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsuppler\FrmSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsuppler\FrmSupplier.Designer.cs">
+      <DependentUpon>FrmSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmuser\FrmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuser\FrmUser.Designer.cs">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UcLogInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcLogInfo.Designer.cs">
+      <DependentUpon>UcLogInfo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmProfile.resx">
+      <DependentUpon>FrmProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsign\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmmain.resx">
+      <DependentUpon>Frmmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsign\FrmSignUp.resx">
+      <DependentUpon>FrmSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsuppler\FrmSaleHistory.resx">
+      <DependentUpon>FrmSaleHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsuppler\FrmSellBook.resx">
+      <DependentUpon>FrmSellBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuser\FrmBorrow.resx">
+      <DependentUpon>FrmBorrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuser\FrmBorrowBook.resx">
+      <DependentUpon>FrmBorrowBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuser\FrmReturn.resx">
+      <DependentUpon>FrmReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuser\FrmUserHistory.resx">
+      <DependentUpon>FrmUserHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staff\FrmBookInfo.resx">
+      <DependentUpon>FrmBookInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staff\FrmBookInfoEdit.resx">
+      <DependentUpon>FrmBookInfoEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staff\FrmBookList.resx">
+      <DependentUpon>FrmBookList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staff\FrmLend.resx">
+      <DependentUpon>FrmLend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staff\FrmLendUser.resx">
+      <DependentUpon>FrmLendUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staff\FrmMember.resx">
+      <DependentUpon>FrmMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staff\FrmReserve.resx">
+      <DependentUpon>FrmReserve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staff\FrmStaff.resx">
+      <DependentUpon>FrmStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsuppler\FrmSupplier.resx">
+      <DependentUpon>FrmSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuser\FrmUser.resx">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UcLogInfo.resx">
+      <DependentUpon>UcLogInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibraryMSBLL\LibraryMSBLL.csproj">
+      <Project>{79635566-778c-4b33-bd6f-a755d6a34508}</Project>
+      <Name>LibraryMSBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibraryMSModel\LibraryMSModel.csproj">
+      <Project>{d46402be-3736-43a7-a280-8203a581cc08}</Project>
+      <Name>LibraryMSModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture7.png" />
+    <None Include="Resources\icons8-student-male-100.png" />
+    <None Include="Resources\giphy.gif" />
+    <None Include="Resources\Picture3.png" />
+    <None Include="Resources\Picture4.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\Picture71.png" />
+    <None Include="Resources\Picture8.png" />
+    <None Include="Resources\setting.png" />
+    <None Include="Resources\Picture11.png" />
+    <None Include="Resources\Picture10.png" />
+    <None Include="Resources\borrow.png" />
+    <None Include="Resources\return.png" />
+    <None Include="Resources\undo.png" />
+    <None Include="Resources\transaction-history.png" />
+    <None Include="Resources\loupe.png" />
+    <None Include="Resources\reset.png" />
+    <None Include="Resources\6410b0af4517d1fadc098f7d19a1f7e2.jpg" />
+    <None Include="Resources\cross-button.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\growth.gif" />
+    <None Include="Resources\growth.png" />
+    <None Include="Resources\starry-night.png" />
+    <None Include="Resources\shooting-star.png" />
+    <None Include="Resources\falling-star.png" />
+    <None Include="Resources\return %281%29.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\loupe1.png" />
+    <None Include="Resources\reset1.png" />
+    <None Include="Resources\bin.png" />
+    <None Include="Resources\selling.png" />
+    <None Include="Resources\loupe2.png" />
+    <None Include="Resources\reset2.png" />
+    <None Include="Resources\transaction-history1.png" />
+    <None Include="Resources\selling1.png" />
+    <None Include="Resources\return %281%291.png" />
+    <None Include="Resources\return %281%292.png" />
+    <None Include="Resources\reset3.png" />
+    <None Include="Resources\book %281%29.png" />
+    <None Include="Resources\book.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\favorite.png" />
+    <None Include="Resources\book %282%29.png" />
+    <None Include="Resources\book %282%291.png" />
+    <None Include="Resources\best-seller.png" />
+    <None Include="Resources\best-seller1.png" />
+    <None Include="Resources\falling-star1.png" />
+    <None Include="Resources\falling-star2.png" />
+    <None Include="Resources\rating.png" />
+    <None Include="Resources\loupe3.png" />
+    <None Include="Resources\Picture31.png" />
+    <None Include="Resources\puzzle.png" />
+    <None Include="Resources\maxresdefault.jpg" />
+    <None Include="Resources\7afe574dd54904997ea969a86f58b2cf.jpg" />
+    <None Include="Resources\2340bcc709f96ff995f6f45300f261a4.jpeg" />
+    <None Include="Resources\tekstury-6d8a9fcb7d99.jpg" />
+    <None Include="Resources\astronomy.png" />
+    <None Include="Resources\accept.png" />
+    <None Include="Resources\reserve.png" />
+    <None Include="Resources\handbook.png" />
+    <None Include="Resources\reserved.png" />
+    <None Include="Resources\peer-to-peer.png" />
+    <None Include="Resources\book-stack.png" />
+    <None Include="Resources\networking.png" />
+    <None Include="Resources\alert.png" />
+    <None Include="Resources\star.png" />
+    <None Include="Resources\book %283%29.png" />
+    <None Include="Resources\shooting-star %281%29.png" />
+    <None Include="Resources\reading.png" />
+    <None Include="Resources\reading %281%29.png" />
+    <None Include="Resources\book-stack1.png" />
+    <None Include="Resources\inx960x640.jpg" />
+    <None Include="Resources\inx960x6401.jpg" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\user %281%29.png" />
+    <None Include="Resources\log-out.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\books.png" />
+    <None Include="Resources\star %281%29.png" />
+    <None Include="Resources\cancel-event.png" />
+    <Content Include="Resources\cancelRes.png" />
+    <None Include="Resources\cancelRESERVE.png" />
+    <Content Include="SQLite.Interop.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
