@@ -6,4 +6,3 @@ The Library Management System is a C# application developed in Visual Studio. It
 
 Data Storage:
 The system's data is stored in an SQLite database, which can be found in the file path: LibraryManagerSystem/LibraryMS/bin/Debug/library.db 
-We use SQLiteStudio for managing the database.
